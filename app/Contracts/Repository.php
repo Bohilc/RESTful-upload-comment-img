@@ -83,7 +83,7 @@ interface Repository
     public function get($scope = null, array $columns = ['*']);
 
     /**
-     * Update Entitly if exists.
+     * Update Entity if exists.
      *
      * @param int|string $find
      * @param array $fields

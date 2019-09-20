@@ -68,6 +68,6 @@ abstract class Repository implements Contract
 
     public function update($id, array $fileds)
     {
-        // TODO: Implement update() method.
+        return $this->entityClass::where('active', $id)->update($fileds);
     }
 }

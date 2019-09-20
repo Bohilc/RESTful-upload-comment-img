@@ -24,8 +24,8 @@ class CommentsImgProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(
-            \App\Contracts\CommentsImg::class,
-            \App\Repositories\CommentUrlRepository::class
+            \App\Contracts\CommentsImgInterface::class,
+            \App\Repositories\CommentImgRepository::class
             );
     }
 

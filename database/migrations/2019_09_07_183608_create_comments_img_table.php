@@ -15,8 +15,10 @@ class CreateCommentsImgTable extends Migration
     {
         Schema::create('comments_img', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('comment_id');
-            $table->string('url');
+            $table->integer('product_id');
+            $table->string('author');
+            $table->tinyInteger('rating')->nullable(true);
+            $table->string('url')->nullable(true);
             $table->timestamps();
         });
     }

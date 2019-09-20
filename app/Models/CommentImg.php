@@ -7,7 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class CommentImg extends Model
 {
     protected $fillable = [
-      'comment_id', 'url'
+        'product_id',
+        'author',
+        'rating',
+        'comment',
+        'url'
     ];
     /**
      * The table associated with the model.
